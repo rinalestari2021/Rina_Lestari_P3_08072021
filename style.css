@@ -5,8 +5,9 @@
 }
 
 @font-face {
-  font-family: "Shrikhand", "Roboto";
-  src: url(fonts.googleapis.com);
+  font-family: Shrikhand, Roboto-regular;
+  src: url("../Rina_Lestari_P3_08072021/fonts/Roboto-Regular.ttf"),
+    url("../Rina_Lestari_P3_08072021/fonts/Shrikhand-Regular.ttf");
 }
 
 body {
@@ -26,6 +27,7 @@ body {
 
 header {
   width: 100%;
+  text-align: center;
 }
 
 .logo {
@@ -56,6 +58,15 @@ header {
   text-align: left;
   margin-left: 10px;
 }
+input#locations {
+  border: transparent;
+  background: transparent;
+  font-weight: 600;
+}
+
+.fa-map-marker-alt {
+  margin-right: 0.5em;
+}
 
 h1 {
   margin-left: 2.2em;
@@ -82,6 +93,8 @@ p {
   color: black;
   padding: 0;
   margin: 0;
+  font-size: 0.9em;
+  line-height: 1.4em;
 }
 
 label input {
@@ -91,6 +104,8 @@ label input {
 
 /*style from top of site homepage*/
 .explore {
+  display: flex;
+  justify-content: center;
   border: 0;
   color: white;
   text-align: center;
@@ -141,7 +156,7 @@ label input {
   color: #9356dc;
 }
 
-span.number {
+.number {
   display: flex;
   color: white;
   background-color: #9356dc;
@@ -156,21 +171,24 @@ span.number {
 }
 
 .restaurants {
-  margin: 0;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
 }
 
-.inframe {
-  width: 21em;
-  height: 11em;
+img.inframe {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .one,
 .two,
 .three,
 .four {
-  width: 21em;
-  height: auto;
+  max-width: 100%;
   background-color: white;
   border: 2px solid #f6f6f6;
   border-radius: 15px 15px 15px 15px;
@@ -228,4 +246,29 @@ a.link {
 .fa-utensils {
   font-size: 0.8em;
   margin-right: 0.9em;
+}
+
+/* style resto la palette du gout */
+
+.fa-arrow-left {
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+span.resto {
+  font-family: shrikhand;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.content {
+  background: #f6f6f6;
+  border: 2px solid #f6f6f6;
+  border-radius: 25px 0 20px 0;
+  margin-top: 20px;
 }

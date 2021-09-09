@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
       rel="stylesheet"
@@ -40,16 +41,18 @@
         /></a>
       </header>
       <div class="opening">
-        <span class="location">
-          <i class="fas fa-map-marker-alt" style="font-size: 0.8em"></i>
-          <label
-            ><input
-              type="text"
-              id="Rechercher"
-              name="location"
-              value="Paris, Belleville"
-          /></label>
-        </span>
+        <form>
+          <div class="location">
+            <i class="fas fa-map-marker-alt" style="font-size: 0.8em"></i>
+            <input
+              type="search"
+              id="locations"
+              name="q"
+              placeholder="Paris, Belleville"
+            /><span class="validity"></span>
+          </div>
+        </form>
+
         <h1>Réservez le menu qui vous convient</h1>
         <h2>
           Découvrez des restaurants d'exception,séléctionnés par nos soins
@@ -79,20 +82,17 @@
       <div class="restaurants">
         <h3>Restaurants</h3>
         <div class="one">
-          <a href="lapalettedugout.html" target="_self">
-            <img
+          <a href="lapalettedugout.html" target="_self"
+            ><img
               src="img/img-lapalettedugoutsmall.jpg"
               alt="restaurant la palette du gout"
               class="inframe"
-            />
-          </a>
+          /></a>
           <a href="lapalettedugout.html" target="_self">
             <p>La palette du goût</p></a
           >
-          <a href="lapalettedugout.html" target="_self"><p>Ménilmontant</p></a>
-          <span class="heart"
-            ><a href="#"><i class="fas fa-heart"></i></a
-          ></span>
+          <a href="lapalettedugout.html" target="_self"> <p>Ménilmontant</p></a>
+          <span class="heart"><i class="fas fa-heart"></i></span>
           <span class="new">Nouveau</span>
         </div>
         <div class="two">
