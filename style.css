@@ -80,6 +80,8 @@ h3 {
 p {
   text-decoration: none;
   color: black;
+  padding: 0;
+  margin: 0;
 }
 
 label input {
@@ -175,4 +177,55 @@ span.number {
   padding: 5px;
   display: flex;
   flex-direction: column;
+}
+
+.new {
+  position: absolute;
+  margin-left: 14em;
+  margin-top: 0.8em;
+  width: 5em;
+  height: 1, 8em;
+  text-align: center;
+  color: #008766;
+  background-color: #99e2d0;
+  font-weight: bold;
+  border: 2px solid#99e2d0;
+  padding: 5px;
+}
+
+.fa-heart {
+  color: black;
+}
+
+.fa-heart a:hover {
+  color: #9356dc;
+}
+
+.containerfooter {
+  padding: 1.2em;
+  background-color: #353535;
+  margin: 0.2em;
+  line-height: 1.8em;
+  color: white;
+  text-align: left;
+}
+
+.logofooter {
+  width: 6.5em;
+  height: auto;
+  background-image: white;
+}
+a.link {
+  text-decoration: none;
+  color: white;
+}
+
+.fa-hands-helping {
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+
+.fa-utensils {
+  font-size: 0.8em;
+  margin-right: 0.9em;
 }
