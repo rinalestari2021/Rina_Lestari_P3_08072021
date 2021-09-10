@@ -91,7 +91,7 @@ p {
   color: black;
   padding: 0;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.4em;
 }
 
@@ -200,7 +200,7 @@ img.inframe {
   margin-left: 18.5em;
   margin-top: 0.8em;
   width: 5em;
-  height: 1, 8em;
+  height: 1.8em;
   text-align: center;
   color: #008766;
   background-color: #99e2d0;
@@ -234,7 +234,6 @@ img.inframe {
 .logofooter {
   width: 6.5em;
   height: auto;
-  background-image: white;
 }
 a.link {
   text-decoration: none;
@@ -251,7 +250,7 @@ a.link {
   margin-right: 0.9em;
 }
 
-/* style resto la palette du gout */
+/* style resto pages */
 
 .fa-arrow-left {
   text-align: left;
@@ -259,7 +258,11 @@ a.link {
   color: black;
 }
 
-img {
+.background {
+  object-fit: cover;
+  position: relative;
+  left: 0px;
+  top: 4em;
   max-width: 100%;
   height: auto;
 }
@@ -268,11 +271,79 @@ span.resto {
   font-family: shrikhand;
   font-size: 1.2em;
   font-weight: 600;
+  display: flex;
+  justify-items: center;
 }
 
 .content {
+  position: relative;
   background: #f6f6f6;
-  border: 2px solid #f6f6f6;
-  border-radius: 25px 0 20px 0;
-  margin-top: 20px;
+  border: 5px solid #f6f6f6;
+  border-radius: 30px 30px 0 0;
+}
+
+.titlemenu {
+  border-bottom: 1px #99e2d0;
+}
+
+.startermenu,
+.dish,
+.dessertlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 2%;
+  margin-right: 2%;
+  justify-content: space-between;
+}
+
+.entree1,
+.entree2,
+.entree3,
+.entree4,
+.dish1,
+.dish2,
+.dish3,
+.dessert1,
+.dessert2,
+.dessert3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 23em;
+  height: auto;
+  text-align: left;
+  background-color: #f6f6f6;
+  border: 2px solid rgb(235, 233, 233);
+  padding: 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-order {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  color: white;
+  background: none;
+  padding: 15px 15px;
+  width: 12em;
+  height: 3em;
+  margin-top: 1em;
+  margin-bottom: 01em;
+  font-size: 1em;
+  border-radius: 25px 25px 25px 25px;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.txtbold {
+  font-weight: 700;
+  font-size: 1em;
+}
+.price {
+  font-weight: 600;
+  font-size: 0.8em;
 }
