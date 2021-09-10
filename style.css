@@ -14,8 +14,10 @@ body {
   font-family: "Roboto";
 }
 
-.logo {
-  font-family: "shrikhand";
+header {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .h1,
@@ -23,11 +25,6 @@ body {
 .h3,
 .p {
   font-family: "Roboto";
-}
-
-header {
-  width: 100%;
-  text-align: center;
 }
 
 .logo {
@@ -86,6 +83,7 @@ h2 {
 
 h3 {
   font-size: 1.2em;
+  margin-left: 2%;
 }
 
 p {
@@ -108,21 +106,19 @@ label input {
   justify-content: center;
   border: 0;
   color: white;
-  text-align: center;
   background: none;
   padding: 15px 15px;
   font-size: 1em;
   border-radius: 25px 25px 25px 25px;
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
-  align-items: center;
 }
 
 .navbar {
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 1em;
+  padding: 0.2em;
 }
 .filter {
   width: 100%;
@@ -189,17 +185,19 @@ img.inframe {
 .three,
 .four {
   max-width: 100%;
+  height: auto;
   background-color: white;
   border: 2px solid #f6f6f6;
   border-radius: 15px 15px 15px 15px;
-  padding: 5px;
+  margin: 2%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .new {
   position: absolute;
-  margin-left: 14em;
+  margin-left: 18.5em;
   margin-top: 0.8em;
   width: 5em;
   height: 1, 8em;
@@ -211,8 +209,13 @@ img.inframe {
   padding: 5px;
 }
 
+.one {
+  display: flex;
+}
+
 .fa-heart {
   color: black;
+  margin-left: 23em;
 }
 
 .fa-heart a:hover {
@@ -258,6 +261,7 @@ a.link {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 span.resto {
