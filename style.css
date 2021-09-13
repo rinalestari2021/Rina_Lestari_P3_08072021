@@ -102,8 +102,11 @@ label input {
 
 /*style from top of site homepage*/
 .explore {
+  margin: auto;
+  width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 0;
   color: white;
   background: none;
@@ -115,10 +118,15 @@ label input {
 }
 
 .navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   padding: 0.2em;
+  height: auto;
+  width: 100%;
 }
 .filter {
   width: 100%;
@@ -126,12 +134,13 @@ label input {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: 0.5em;
 }
 
 .choices {
   display: flex;
   justify-content: space-around;
-  width: 14em;
+  width: 15em;
   height: auto;
   text-align: left;
   background-color: #f6f6f6;
@@ -140,7 +149,69 @@ label input {
   border-radius: 15px 15px 15px 15px;
   text-decoration: none;
   color: black;
+  cursor: pointer;
+  font-size: 1em;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-resto {
+  display: flex;
+  justify-content: space-around;
+  width: 15em;
+  height: auto;
+  text-align: left;
+  background-color: #f6f6f6;
+  border: 2px solid rgb(235, 233, 233);
+  padding: 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.filter {
+  position: relative;
+  display: flex;
+  font-family: "Roboto";
+}
+
+.dropdown-menu {
+  display: none;
+  color: black;
+  position: absolute;
+  z-index: 1;
+  background: #eaeaea;
+  font-size: 0.8em;
+  top: 1em;
+  right: 5em;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #7e7e7e;
+  width: 100%;
+}
+
+.dropdown-menu a:active {
+  border: 2px solid #7e7e7e;
+  background-color: #f6f6f6;
+  color: black;
+  margin: 0;
+}
+
+.resto-drop:hover .dropdown-menu {
+  display: inline-block;
+}
+
+.filter:hover .btn-resto {
+  background-color: #f6f6f6;
+  color: black;
 }
 
 .fa-mobile-alt,
@@ -171,7 +242,7 @@ label input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1em;
+  gap: 0.8em;
 }
 
 img.inframe {
@@ -215,7 +286,8 @@ img.inframe {
 
 .fa-heart {
   color: black;
-  margin-left: 23em;
+  margin-left: 15em;
+  font-size: 1.5em;
 }
 
 .fa-heart a:hover {
@@ -252,6 +324,12 @@ a.link {
 
 /* style resto pages */
 
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .fa-arrow-left {
   text-align: left;
   text-decoration: none;
@@ -268,11 +346,12 @@ a.link {
 }
 
 span.resto {
-  font-family: shrikhand;
-  font-size: 1.2em;
+  font-family: "Shrikhand";
+  font-size: 2em;
   font-weight: 600;
   display: flex;
   justify-items: center;
+  margin: 2%;
 }
 
 .content {
@@ -320,9 +399,12 @@ span.resto {
   border-radius: 15px 15px 15px 15px;
   text-decoration: none;
   color: black;
+  line-height: 1.5em;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-order {
+  margin: auto;
+  width: 50%;
   display: flex;
   justify-content: center;
   border: 0;
