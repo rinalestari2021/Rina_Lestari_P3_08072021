@@ -112,6 +112,7 @@ label input {
   background: none;
   padding: 15px 15px;
   font-size: 1em;
+  cursor: pointer;
   border-radius: 25px 25px 25px 25px;
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
@@ -139,26 +140,11 @@ label input {
 
 .choices {
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
+  gap: 0.8em;
   width: 15em;
   height: auto;
-  text-align: left;
-  background-color: #f6f6f6;
-  border: 2px solid rgb(235, 233, 233);
-  padding: 15px 15px;
-  border-radius: 15px 15px 15px 15px;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  font-size: 1em;
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.btn-resto {
-  display: flex;
-  justify-content: space-around;
-  width: 15em;
-  height: auto;
+  margin-right: 1em;
   text-align: left;
   background-color: #f6f6f6;
   border: 2px solid rgb(235, 233, 233);
@@ -177,43 +163,6 @@ label input {
   font-family: "Roboto";
 }
 
-.dropdown-menu {
-  display: none;
-  color: black;
-  position: absolute;
-  z-index: 1;
-  background: #eaeaea;
-  font-size: 0.8em;
-  top: 1em;
-  right: 5em;
-}
-
-.dropdown-menu a {
-  text-decoration: none;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 2px solid #7e7e7e;
-  width: 100%;
-}
-
-.dropdown-menu a:active {
-  border: 2px solid #7e7e7e;
-  background-color: #f6f6f6;
-  color: black;
-  margin: 0;
-}
-
-.resto-drop:hover .dropdown-menu {
-  display: inline-block;
-}
-
-.filter:hover .btn-resto {
-  background-color: #f6f6f6;
-  color: black;
-}
-
 .fa-mobile-alt,
 .fa-list-ul {
   color: #7e7e7e;
@@ -225,6 +174,7 @@ label input {
 
 .number {
   display: flex;
+  align-items: center;
   color: white;
   background-color: #9356dc;
   border: 2px solid #9356dc;
@@ -234,7 +184,6 @@ label input {
   height: 0.6em;
   font-size: 0.8em;
   justify-content: center;
-  align-items: center;
 }
 
 .restaurants {
@@ -255,6 +204,7 @@ img.inframe {
 .two,
 .three,
 .four {
+  text-decoration: none;
   max-width: 100%;
   height: auto;
   background-color: white;
@@ -268,6 +218,9 @@ img.inframe {
 
 .new {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 18.5em;
   margin-top: 0.8em;
   width: 5em;
