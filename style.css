@@ -294,6 +294,15 @@ a.link {
   margin-right: 0.9em;
 }
 
+/*section contact on footer*/
+.formemail {
+  display: none;
+}
+
+.link a:hover .formemail {
+  display: inline-block;
+}
+
 /* style resto pages */
 
 .img {
