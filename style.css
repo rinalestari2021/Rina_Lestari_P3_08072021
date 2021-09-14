@@ -135,11 +135,11 @@ label input {
 .navbar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  padding: 0.2em;
+  margin-bottom: 2em;
+  padding: 2em;
   height: auto;
   width: 100%;
 }
