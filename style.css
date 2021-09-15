@@ -103,6 +103,7 @@ a {
   margin-left: 2%;
   font-size: 1em;
   line-height: 1.8em;
+  margin-right: 2%;
 }
 
 b {
@@ -158,9 +159,7 @@ label input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1em;
   height: auto;
-  margin-right: 1em;
   text-align: left;
   background-color: #f6f6f6;
   border: 2px solid rgb(235, 233, 233);
@@ -211,7 +210,6 @@ img.inframe {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  max-width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -232,7 +230,6 @@ img.inframe {
   background-color: white;
   border: 2px solid #f6f6f6;
   border-radius: 15px 15px 15px 15px;
-  flex-wrap: wrap;
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -307,9 +304,14 @@ img {
 }
 
 .fa-arrow-left {
-  text-align: left;
+  margin-left: -6em;
+  margin-bottom: 1.5em;
+  text-align: center;
   text-decoration: none;
-  color: black;
+  color: #353535;
+  font-size: 1.2em;
+  font-weight: 600;
+  vertical-align: middle;
 }
 
 .background {
@@ -322,13 +324,17 @@ img {
 }
 
 span.resto {
-  width: 80%;
   font-family: "Shrikhand";
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 600;
   display: flex;
   justify-items: center;
   margin: 2%;
+}
+
+.heartresto {
+  margin-left: 3em;
+  color: none;
 }
 
 .content {
@@ -405,5 +411,5 @@ span.resto {
 }
 .price {
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 1em;
 }
