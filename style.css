@@ -1,21 +1,21 @@
 #bloc_page {
-  width: 100%;
+  max-width: 100%;
   margin: 0;
   background-color: #f6f6f6;
 }
 
 @font-face {
-  font-family: Shrikhand, Roboto-regular;
-  src: url("../Rina_Lestari_P3_08072021/fonts/Roboto-Regular.ttf"),
-    url("../Rina_Lestari_P3_08072021/fonts/Shrikhand-Regular.ttf");
+  font-family: "Shrikhand" "Roboto";
+  src: url("../Rina_Lestari_P3_08072021/fonts/Roboto.ttf"),
+    url("../Rina_Lestari_P3_08072021/fonts/Shrikhand.ttf");
 }
 
 body {
+  margin: 0;
   font-family: "Roboto";
 }
 
 header {
-  max-width: 100%;
   text-align: center;
   text-decoration: none;
 }
@@ -32,18 +32,18 @@ header {
   width: 10em;
   height: auto;
   align-items: center;
+  top: 0.4em;
   margin-top: 0;
   margin-bottom: 0.8rem;
 }
 
 .location {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
   padding: 10px;
-  box-shadow: 4px 0 0 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: inset 0px 24px 4px -19px #d5d5d5;
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -68,8 +68,8 @@ input#locations {
 h1 {
   margin-left: 2.2em;
   margin-right: 2.2em;
-  font-size: 1.8em;
   text-align: center;
+  font-weight: 900;
 }
 
 h2 {
@@ -133,37 +133,38 @@ label input {
 }
 
 .navbar {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: white;
   margin-top: 1.5em;
   margin-bottom: 2em;
-  padding: 2em;
-  height: auto;
-  width: 100%;
+  padding: 1em;
 }
+
 .filter {
-  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 0.5em;
+  position: relative;
+  font-family: "Roboto";
+  gap: 2em;
 }
 
 .choices {
+  position: relative;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.8em;
-  width: 15em;
+  gap: 1em;
   height: auto;
   margin-right: 1em;
   text-align: left;
   background-color: #f6f6f6;
   border: 2px solid rgb(235, 233, 233);
-  padding: 15px 15px;
+  padding: 20px 20px;
   border-radius: 20px 20px 20px 20px;
   text-decoration: none;
   color: black;
@@ -171,12 +172,6 @@ label input {
   font-size: 1em;
   font-weight: 600;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.filter {
-  position: relative;
-  display: flex;
-  font-family: "Roboto";
 }
 
 .fa-mobile-alt,
@@ -189,6 +184,7 @@ label input {
 }
 
 .number {
+  position: absolute;
   display: flex;
   align-items: center;
   color: white;
@@ -198,8 +194,9 @@ label input {
   border-radius: 50%;
   width: 0.6em;
   height: 0.6em;
-  font-size: 0.8em;
+  font-size: 0.7em;
   justify-content: center;
+  margin-left: -2.5em;
 }
 
 .restaurants {
@@ -226,9 +223,10 @@ img.inframe {
 .two,
 .three,
 .four {
+  position: relative;
   text-decoration: none;
   color: black;
-  max-width: 100%;
+
   height: auto;
   margin: 0;
   background-color: white;
@@ -258,9 +256,9 @@ img.inframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 18.5em;
-  margin-top: 0.8em;
-  width: 5em;
+  margin-left: 3em;
+  margin-top: 1em;
+  width: 2em;
   height: 1.8em;
   text-align: center;
   color: #008766;
