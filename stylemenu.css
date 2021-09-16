@@ -1,0 +1,115 @@
+img {
+  max-width: 100%;
+  height: auto;
+  top: 1em;
+}
+
+.fa-arrow-left {
+  margin-left: -6em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  color: #353535;
+  font-size: 1.2em;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.background {
+  object-fit: cover;
+  position: relative;
+  left: 0px;
+  top: 0.2em;
+  max-width: 100%;
+  height: auto;
+}
+
+.heartresto {
+  margin-left: 2em;
+}
+
+.resto {
+  font-family: "Shrikhand";
+  font-size: 1.8em;
+  font-weight: 600;
+  display: flex;
+  justify-items: center;
+  margin: 2%;
+}
+
+.content {
+  position: relative;
+  top: -1.5em;
+  background: #f6f6f6;
+  border: 5px solid #f6f6f6;
+  border-radius: 30px 30px 0 0;
+}
+
+.titlemenu {
+  border-bottom: 1px #99e2d0;
+}
+
+.startermenu,
+.dish,
+.dessertlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 2%;
+  margin-right: 2%;
+  justify-content: space-between;
+}
+
+.entree1,
+.entree2,
+.entree3,
+.entree4,
+.dish1,
+.dish2,
+.dish3,
+.dessert1,
+.dessert2,
+.dessert3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 23em;
+  height: auto;
+  text-align: left;
+  background-color: #f6f6f6;
+  border: 2px solid rgb(235, 233, 233);
+  padding: 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  text-decoration: none;
+  color: black;
+  line-height: 1.5em;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-order {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  color: white;
+  background: none;
+  padding: 15px 15px;
+  width: 12em;
+  height: 3em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  font-size: 1em;
+  border-radius: 25px 25px 25px 25px;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.txtbold {
+  font-weight: 700;
+  font-size: 1em;
+}
+.price {
+  font-weight: 600;
+  font-size: 1em;
+}

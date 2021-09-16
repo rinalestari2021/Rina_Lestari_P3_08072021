@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylemenu.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin />
@@ -57,7 +58,7 @@
         <h2>
           Découvrez des restaurants d'exception,séléctionnés par nos soins
         </h2>
-        <button class="explore">Explorer nos restaurants</button>
+        <a href="#list-resto"><button class="explore">Explorer nos restaurants</button></a>
       </div>
       <nav class="navbar">
         <h3>Fonctionnement</h3>
@@ -77,7 +78,7 @@
         </div>
       </nav>
       <div class="restaurants">
-        <h3 id="#list-resto">Restaurants</h3>
+        <h3 id="list-resto">Restaurants</h3>
         <div class="one">
           <a href="lapalettedugout.html"
             ><img
@@ -85,35 +86,26 @@
               alt="restaurant la palette du gout"
               class="inframe"
           /></a>
-          <p>
-            <a href="lapalettedugout.html">La palette du goût</a>
-          </p>
-          <p>
-            <a href="lapalettedugout.html"
-              >Ménilmontant
-              <span class="heart"><i class="fas fa-heart"></i></span
-            ></a>
-          </p>
-          <span class="new">Nouveau</span
-          ><!-- need to fix this one-->
+          <span class="new">Nouveau</span>
+          <div class="info">
+            <a href="lapalettedugout.html">La palette du goût</a><br />
+            <a href="lapalettedugout.html">Ménilmontant</a>
+            <span class="icon far fa-heart"></span>
+          </div>
         </div>
-        <div class="two">
+        <div class="two"> 
           <a href="lanoteechantee.html"
             ><img
               src="img/img-Lanoteenchanteesmall.jpg"
               alt="restaurant la note enchantee"
               class="inframe"
           /></a>
-          <p>
-            <a href="lanoteechantee.html">La note enchantee</a>
-          </p>
-          <p>
-            <a href="lanoteechantee.html"
-              >Charonne <span class="heart"><i class="fas fa-heart"></i></span
-            ></a>
-          </p>
-          <span class="new">Nouveau</span
-          ><!-- need to fix this one-->
+          <span class="new">Nouveau</span>
+          <div class="info">
+              <a href="lanoteechantee.html">La note enchantee</a><br />
+              <a href="lanoteechantee.html">Charonne </a>
+              <span class="icon far fa-heart"></i></span>
+          </div>
         </div>
         <div class="three">
           <a href="alafrancaise.html"
@@ -122,14 +114,11 @@
               alt="restaurant a la francaise"
               class="inframe"
           /></a>
-          <p>
-            <a href="#">À la française</a>
-          </p>
-          <p>
-            <a href="alafrancaise.html"
-              >Cité Rouge <span class="heart"><i class="fas fa-heart"></i></span
-            ></a>
-          </p>
+          <div class="info">
+              <a href="#">À la française</a><br />
+              <a href="alafrancaise.html">Cité Rouge </a>
+              <span class="icon far fa-heart"></i></span>
+          </div>
         </div>
         <div class="four">
           <a href="ledelicesdessens.html"
@@ -138,20 +127,16 @@
               alt="restaurant le delices des sens"
               class="inframe"
           /></a>
-          <p>
-            <a href="ledelicesdessens.html">Le délice des sens</a>
-          </p>
-          <p>
-            <a href="ledelicesdessens.html"
-              >Folie-Mericourt
-              <span class="heart"><i class="fas fa-heart"></i></span
-            ></a>
-          </p>
+          <div class="info">
+            <a href="ledelicesdessens.html">Le délice des sens</a><br />
+            <a href="ledelicesdessens.html">Folie-Mericourt</a>
+            <span class="icon far fa-heart"></i></span>
+          </div>
         </div>
       </div>
     </div>
     <footer class="containerfooter">
-      <a href="/index.html" class="link"
+      <a href="/accueil.html" class="link"
         ><img src="ohmyfood2.png" alt="ohmyfood" class="logofooter"
       /></a>
       <p>
