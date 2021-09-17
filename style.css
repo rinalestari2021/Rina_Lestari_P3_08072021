@@ -27,6 +27,54 @@ header {
   font-family: "Roboto";
 }
 
+h1 {
+  margin-left: 2.2em;
+  margin-right: 2.2em;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.9em;
+}
+
+h2 {
+  margin-left: 2.2em;
+  margin-right: 2.2em;
+  font-size: 1em;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 25px;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-left: 2%;
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+p {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  line-height: 1.8em;
+  margin: 0;
+}
+
+b {
+  font-size: 1.2em;
+}
+
+/*style from top of page accueil*/
+
 .logo {
   position: relative;
   width: 10em;
@@ -61,62 +109,15 @@ input#locations {
   font-weight: 600;
 }
 
-.fa-map-marker-alt {
-  margin-right: 0.5em;
-}
-
-h1 {
-  margin-left: 2.2em;
-  margin-right: 2.2em;
-  text-align: center;
-  font-weight: 900;
-}
-
-h2 {
-  margin-left: 2.2em;
-  margin-right: 2.2em;
-  font-size: 1.2em;
-  font-weight: lighter;
-  text-align: center;
-  line-height: 25px;
-}
-
-h3 {
-  font-size: 1.3em;
-  margin-left: 2%;
-  color: black;
-  text-decoration: none;
-  padding: 0;
-  font-weight: bold;
-}
-
-p {
-  text-decoration: none;
-  color: black;
-  padding: 0;
-  margin: 0;
-  font-size: 0.8em;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  margin-left: 2%;
-  font-size: 1em;
-  line-height: 1.8em;
-  margin-right: 2%;
-}
-
-b {
-  font-size: 1.2em;
-}
-
 label input {
   align-items: center;
   font-weight: 600;
 }
 
-/*style from top of page accueil*/
+.fa-map-marker-alt {
+  margin-right: 0.5em;
+}
+
 .explore {
   margin: auto;
   width: 50%;
@@ -157,8 +158,10 @@ label input {
 .choices {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
+  flex-grow: 1;
+  width: 17em;
   height: auto;
   text-align: left;
   background-color: #f6f6f6;
@@ -168,7 +171,7 @@ label input {
   text-decoration: none;
   color: black;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 600;
   margin-bottom: 2em;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
@@ -217,6 +220,7 @@ img.inframe {
   border-radius: 15px 15px 0 0;
   padding: 0;
   margin: 0;
+  top: 0;
 }
 
 .one,
@@ -240,8 +244,7 @@ img.inframe {
 }
 
 .info {
-  display: inline;
-  line-height: 0.3em;
+  display: inline-block;
   margin: 2%;
 }
 
@@ -255,10 +258,6 @@ img.inframe {
   width: 80%;
 }
 
-.heart {
-  margin-left: 12em;
-  font-size: 1.5em;
-}
 span.icon {
   width: 50%;
   font-size: 2em;
@@ -273,7 +272,7 @@ span.icon {
   align-items: center;
   justify-content: center;
   margin-left: 20em;
-  margin-top: 1em;
+  margin-top: 1.5em;
   width: 5em;
   height: 1.5em;
   text-align: center;

@@ -25,7 +25,8 @@ img {
 }
 
 .heartresto {
-  margin-left: 2em;
+  margin-left: 2.5em;
+  color: #353535;
 }
 
 .resto {
@@ -98,7 +99,7 @@ img {
   width: 12em;
   height: 3em;
   margin-top: 3em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   font-size: 1em;
   border-radius: 25px 25px 25px 25px;
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
@@ -112,4 +113,7 @@ img {
 .price {
   font-weight: 600;
   font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
