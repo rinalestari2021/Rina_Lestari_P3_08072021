@@ -123,9 +123,11 @@ label input {
   display: none;
 }
 
-.identity :hover {
+.identity:hover {
   font-size: 1em;
-  display: flex;
+  display: block;
+  transform: translateY(-108%);
+  transition: ease-out;
 }
 
 .explore {
@@ -147,8 +149,10 @@ label input {
 
 .explore:hover, /*animation for button*/
 :active {
-  box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(to bottom right, #f79fde, #ae86df 80%);
+  box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.5);
+  background-image: lighter;
+  opacity: 0.6;
+  transition: opacity 300ms;
 }
 
 .navbar {
@@ -262,6 +266,7 @@ img.inframe {
 
 .info {
   display: inline-block;
+  align-items: flex-end;
   margin: 2%;
 }
 
@@ -276,9 +281,8 @@ img.inframe {
 }
 
 span.icon {
-  width: 50%;
   font-size: 2em;
-  margin-left: 12em;
+  margin-left: 8em;
   margin-top: -2em;
 }
 
