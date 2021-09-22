@@ -30,13 +30,15 @@ img {
 }
 
 .resto {
+  display: flex;
+  justify-content: space-between;
   font-family: "Shrikhand";
   font-size: 1.8em;
   font-weight: 600;
   display: flex;
   justify-items: flex-end;
   align-content: space-between;
-  margin: 2%;
+  margin: 3%;
 }
 
 h4 {
@@ -129,12 +131,21 @@ h4 {
 }
 
 .txtbold {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 1em;
 }
 
+.txtprice {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-size: 0.8em;
+}
+
 .price {
   position: relative;
+  font-family: "Roboto";
   display: flex;
   align-content: flex-end;
   font-weight: 600;

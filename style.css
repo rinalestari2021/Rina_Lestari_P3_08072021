@@ -270,6 +270,7 @@ img.inframe {
   grid-row: 2;
 }
 
+/*animation for button like in heart shape*/
 .btn-heart {
   display: block;
   grid-column: 2;
@@ -291,7 +292,7 @@ img.heartfill {
 }
 
 .btn-heart:hover .heartfill,
-.btn-heart:hover {
+.btn-heart:visited {
   display: block;
 }
 
