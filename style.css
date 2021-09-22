@@ -280,10 +280,23 @@ img.inframe {
   width: 80%;
 }
 
-span.icon {
-  font-size: 2em;
-  margin-left: 8em;
-  margin-top: -2em;
+img.heartempty,
+img.heartfill {
+  width: 1.3em;
+  height: auto;
+  cursor: pointer;
+}
+
+img.heartfill {
+  display: none;
+}
+
+img.heartfill:hover {
+  display: block;
+}
+
+img.heartempty:hover {
+  display: none;
 }
 
 .new {
