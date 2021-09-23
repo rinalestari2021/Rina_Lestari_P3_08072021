@@ -107,10 +107,8 @@ h4 {
 .dessert3 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-content: space-between;
-  width: 23em;
-  height: auto;
+  justify-content: space-around;
+  flex-wrap: nowrap;
   background-color: #f6f6f6;
   border: 2px solid rgb(235, 233, 233);
   padding: 15px 15px;
@@ -119,24 +117,59 @@ h4 {
   color: black;
   line-height: 1.5em;
   margin: 2%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  cursor: pointer;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* animation checked slide in from right*/
-.checked-btn {
-  width: 20%;
+.txtprice {
   display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-size: 0.8em;
+}
+
+/* animation checked slide in from right need to fix the position*/
+.checked-btn {
+  width: 2.5em;
+  height: auto;
+  display: none;
   flex-direction: column;
+  justify-content: space-between;
   align-content: flex-end;
-  justify-content: center;
   position: relative;
   border: 2px solid #99e2d0;
   background-color: #99e2d0;
-  padding: 0.5em;
+  padding: 1em;
   border-radius: 0 15px 15px 0;
+}
+
+.checkmark {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.entree1:hover .checked-btn,
+.entree2:hover .checked-btn,
+.entree3:hover .checked-btn,
+.entree4:hover .checked-btn,
+.dish1:hover .checked-btn,
+.dish2:hover .checked-btn,
+.dish3:hover .checked-btn,
+.dessert1:hover .checked-btn,
+.dessert2:hover .checked-btn,
+.dessert3:hover .checked-btn {
+  display: block;
+  animation: moveToLeft 0.5s ease reverse;
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translatex(20%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .btn-order {
@@ -173,13 +206,6 @@ h4 {
   font-size: 1em;
 }
 
-.txtprice {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Roboto";
-  font-size: 0.8em;
-}
-
 .price {
   position: relative;
   font-family: "Roboto";
@@ -187,4 +213,8 @@ h4 {
   align-content: flex-end;
   font-weight: 600;
   font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
 }

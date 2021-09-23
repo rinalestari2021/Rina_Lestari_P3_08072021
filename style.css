@@ -347,3 +347,31 @@ a.link,
   font-size: 0.8em;
   margin-right: 0.9em;
 }
+
+/*loading spinner animation*/
+
+.spinner::before {
+  animation: 3s linear infinite spinner;
+  animation-play-state: inherit;
+  background-color: white;
+  border: solid 5px #9356dc;
+  border-bottom-color: #99e2d0;
+  border-radius: 50%;
+  content: ohmyfood;
+  height: 2.5em;
+  width: 2.5em;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
