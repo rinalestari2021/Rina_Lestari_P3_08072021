@@ -35,14 +35,12 @@ img {
 
 img.heartfill {
   display: none;
-  margin-left: 2%;
-  margin-right: 3%;
+  margin: 0;
 }
 
 .btn-heart2:hover .heartempty {
   display: none;
-  margin-left: 2%;
-  margin-right: 3%;
+  margin: 0;
 }
 
 .btn-heart2:hover .heartfill,

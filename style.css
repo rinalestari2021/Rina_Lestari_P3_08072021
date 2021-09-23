@@ -212,6 +212,12 @@ label input {
   margin-left: -3.5em;
 }
 
+/*animation menu on page accueil*/
+.menupreview:hover .spinner,
+.menupreview:visited {
+  display: block;
+}
+
 .restaurants {
   text-decoration: none;
   display: flex;
@@ -279,6 +285,8 @@ img.inframe {
   height: auto;
   cursor: pointer;
   margin: 0;
+  transform: inherit;
+  transition: 1s linear;
 }
 
 img.heartfill {
@@ -348,30 +356,43 @@ a.link,
   margin-right: 0.9em;
 }
 
-/*loading spinner animation*/
+/*loading spinner animation on page accueil should appears on menu*/
 
-.spinner::before {
-  animation: 3s linear infinite spinner;
+.spinner {
+  display: none;
+  animation: spin 3s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
   animation-play-state: inherit;
-  background-color: white;
-  border: solid 5px #9356dc;
+  border: solid 16px #9356dc;
   border-bottom-color: #99e2d0;
   border-radius: 50%;
-  content: ohmyfood;
-  height: 2.5em;
-  width: 2.5em;
+  height: 120px;
+  width: 120px;
+  top: 50%;
+  left: 50%;
   position: absolute;
-  top: 10%;
-  left: 10%;
-  transform: translate3d(-50%, -50%, 0);
-  will-change: transform;
+  animation-duration: 3s;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes spinner {
+@keyframes spin {
   0% {
-    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    transform: rotate(360deg);
   }
+}
+
+/*overlay on page accueil*/
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background: white;
 }
