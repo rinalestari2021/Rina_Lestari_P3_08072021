@@ -46,6 +46,7 @@ img.heartfill {
 .btn-heart2:hover .heartfill,
 .btn-heart2:visited {
   display: block;
+  margin: 0;
 }
 
 .resto {
@@ -100,7 +101,7 @@ h4 {
   animation-duration: 3s;
   animation-delay: 0.5s;
   animation-name: slidein;
-  animation-iteration-count: infinite;
+  animation-iteration-count: inherit;
 }
 
 @keyframes slidein {
