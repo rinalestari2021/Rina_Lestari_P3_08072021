@@ -1,8 +1,8 @@
-/*tablet*/
-@media only screen and (min-width: 600px) {
+/*for screen from 601px to 1200px*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   #bloc_page {
-    width: 80%;
-    margin: 0;
+    width: 98%;
+    margin: auto;
     background-color: #f6f6f6;
   }
 
@@ -15,14 +15,33 @@
   .logo {
     width: 20em;
   }
+
+  .explore {
+    width: 0;
+  }
 }
 
 /*medium screen*/
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  #bloc_page {
+    width: 98%;
+    margin: auto;
+    background-color: #f6f6f6;
+  }
 }
 /*desktop/laptops*/
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
+  #bloc_page {
+    width: 98%;
+    margin: auto;
+    background-color: #f6f6f6;
+  }
 }
 /*large screen*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
+  #bloc_page {
+    width: 98%;
+    margin: auto;
+    background-color: #f6f6f6;
+  }
 }
