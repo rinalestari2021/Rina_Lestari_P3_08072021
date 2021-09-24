@@ -1,9 +1,8 @@
-/*for screen from 601px to 1200px*/
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+/*tablet*/
+@media screen and(min-width:600px) {
   #bloc_page {
     width: 98%;
     margin: auto;
-    background-color: #f6f6f6;
   }
 
   body {
@@ -17,7 +16,7 @@
   }
 
   .explore {
-    width: 0;
+    margin: auto;
   }
 }
 
@@ -26,22 +25,20 @@
   #bloc_page {
     width: 98%;
     margin: auto;
-    background-color: #f6f6f6;
   }
 }
 /*desktop/laptops*/
-@media screen and (min-width: 992px) {
+@media screen and(min-width:992px) {
   #bloc_page {
     width: 98%;
     margin: auto;
-    background-color: #f6f6f6;
   }
 }
+
 /*large screen*/
-@media only screen and (min-width: 1201px) {
+@media screen and(min-width:1200px) {
   #bloc_page {
     width: 98%;
     margin: auto;
-    background-color: #f6f6f6;
   }
 }
