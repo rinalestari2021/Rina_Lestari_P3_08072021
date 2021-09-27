@@ -160,7 +160,6 @@ label input {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  align-items: flex-start;
   position: relative;
   font-family: "Roboto";
 }
@@ -214,7 +213,7 @@ label input {
 
 /*animation menu on page accueil*/
 .menupreview:hover .spinner,
-.menupreview:visited {
+.menupreview:visited .menuspreview {
   display: block;
 }
 
@@ -223,6 +222,7 @@ label input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 2%;
 }
 
 img.inframe {
@@ -395,4 +395,22 @@ a.link,
   width: 100%;
   height: auto;
   background: white;
+}
+
+/*preview menus animation*/
+.menuspreview {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.menupreview:hover .first:visited {
+  animation: ease-in-out 3s linear infinite;
+  animation-duration: 3s;
 }
