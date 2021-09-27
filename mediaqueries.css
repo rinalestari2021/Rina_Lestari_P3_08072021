@@ -19,6 +19,7 @@
     width: 20em;
     align-items: center;
     justify-content: center;
+    margin-top: 2em;
   }
 
   .filter {
@@ -48,11 +49,16 @@
     margin-right: 2em;
   }
 
+  .heartfill {
+    margin: 0;
+  }
+
   .containerfooter {
     display: flex;
     justify-content: start;
     justify-content: space-evenly;
     align-content: flex-start;
+    align-items: center;
   }
 
   .p {
