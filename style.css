@@ -289,11 +289,6 @@ img.inframe {
   transition: 1s linear;
 }
 
-img.heartfill {
-  display: none;
-  margin: 0;
-}
-
 .btn-heart:hover .heartempty {
   display: none;
   margin: 0;
@@ -302,6 +297,8 @@ img.heartfill {
 .btn-heart:hover .heartfill,
 .btn-heart:visited {
   display: block;
+  margin: 0;
+  color: linear-gradient(to bottom right, #ff79da, #9356dc);
 }
 
 .new {
