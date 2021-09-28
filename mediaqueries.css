@@ -65,6 +65,11 @@
     justify-content: space-between;
   }
 
+  h3 {
+    margin-right: 1em;
+    align-items: center;
+  }
+
   .one,
   .two,
   .three,
