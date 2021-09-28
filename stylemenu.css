@@ -188,6 +188,18 @@ h4 {
   display: flex;
   align-items: center;
   margin: 0;
+  display: block;
+  animation: spin 1s linear;
+  -webkit-animation: spin 1s linear, movetoleft 1s linear;
+}
+
+@keyframes movetoleft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .entree1:hover .checked-btn,
