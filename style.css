@@ -214,7 +214,7 @@ label input {
 /*animation menu on page accueil*/
 .menupreview:hover .spinner,
 .menupreview:visited .menuspreview {
-  display: block;
+  display: inline-block;
 }
 
 .restaurants {
@@ -295,10 +295,9 @@ img.inframe {
 }
 
 .btn-heart:hover .heartfill,
-.btn-heart:visited {
+.btn-heart::after {
   display: block;
   margin: 0;
-  color: linear-gradient(to bottom right, #ff79da, #9356dc);
 }
 
 .new {
@@ -356,19 +355,19 @@ a.link,
 /*loading spinner animation on page accueil should appears on menu*/
 
 .spinner {
-  display: none;
+  display: block;
   animation: spin 3s linear infinite;
   -webkit-animation: spin 3s linear infinite;
   animation-play-state: inherit;
   border: solid 16px #9356dc;
   border-bottom-color: #99e2d0;
   border-radius: 50%;
-  height: 120px;
-  width: 120px;
+  height: 100vw;
+  width: 100vh;
   top: 50%;
   left: 50%;
+  z-index: 1;
   position: absolute;
-  animation-duration: 3s;
   transform: translate(-50%, -50%);
 }
 
