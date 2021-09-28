@@ -410,7 +410,24 @@ a.link,
   background: white;
 }
 
-.menupreview:hover .first:visited {
-  animation: ease-in-out 3s linear infinite;
+.first,
+.second,
+.third,
+.fourth {
   animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-name: preview;
+  animation-iteration-count: inherit;
+}
+
+@keyframes preview {
+  from {
+    margin-right: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
