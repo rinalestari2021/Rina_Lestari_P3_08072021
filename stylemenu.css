@@ -146,6 +146,9 @@ h4 {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .price {
@@ -166,6 +169,7 @@ h4 {
   font-size: 0.8em;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* animation checked slide in from right need to fix the position*/

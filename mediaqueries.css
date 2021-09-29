@@ -45,6 +45,7 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
   }
 
   .filter {
@@ -109,17 +110,19 @@
     font-family: "Roboto";
     font-weight: 700;
     font-size: 1em;
-    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .txtprice {
-    width: 80%;
     display: flex;
     justify-content: space-between;
     font-family: "Roboto";
     font-size: 0.8em;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .logofooter {
