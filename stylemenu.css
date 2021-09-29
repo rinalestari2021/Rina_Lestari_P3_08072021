@@ -31,9 +31,16 @@ img {
   cursor: pointer;
   margin: 0;
   width: 1em;
+  height: 1em;
+  background-image: url("img/heartempty.png");
+  background-size: cover;
 }
 
-img.heartfill {
+.btn-heart2:hover {
+  background-image: url("img/heartcolor.png");
+}
+
+/* img.heartfill {
   display: none;
   margin: 0;
 }
@@ -47,7 +54,7 @@ img.heartfill {
 .btn-heart2:visited {
   display: block;
   margin: 0;
-}
+} */
 
 .resto {
   display: flex;
@@ -126,18 +133,16 @@ h4 {
 .dessert1,
 .dessert2,
 .dessert3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  display: block;
+  position: relative;
   background-color: #f6f6f6;
   border: 2px solid rgb(235, 233, 233);
-  padding: 15px 15px;
   border-radius: 15px 15px 15px 15px;
   text-decoration: none;
   color: black;
   line-height: 1.5em;
   margin: 2%;
+  overflow: hidden;
   cursor: pointer;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -175,11 +180,7 @@ h4 {
 /* animation checked slide in from right need to fix the position*/
 .checked-btn {
   width: 2.5em;
-  height: auto;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: flex-end;
+
   position: relative;
   border: 2px solid #99e2d0;
   background-color: #99e2d0;
@@ -188,12 +189,10 @@ h4 {
 }
 
 .checkmark {
-  display: flex;
-  align-items: center;
   margin: 0;
   display: block;
   animation: spin 1s linear;
-  -webkit-animation: spin 1s linear, movetoleft 1s linear;
+  -webkit-animation: spin 1s linear;
 }
 
 @keyframes movetoleft {
@@ -205,23 +204,23 @@ h4 {
   }
 }
 
-.entree1:hover .checked-btn,
-.entree2:hover .checked-btn,
-.entree3:hover .checked-btn,
-.entree4:hover .checked-btn,
-.dish1:hover .checked-btn,
-.dish2:hover .checked-btn,
-.dish3:hover .checked-btn,
-.dessert1:hover .checked-btn,
-.dessert2:hover .checked-btn,
-.dessert3:hover .checked-btn {
-  display: block;
-  animation: moveToLeft 0.5s ease reverse;
+.entree1:hover .padding,
+.entree2:hover .padding,
+.entree3:hover .padding,
+.entree4:hover .padding,
+.dish1:hover .padding,
+.dish2:hover .padding,
+.dish3:hover .padding,
+.dessert1:hover .padding,
+.dessert2:hover .padding,
+.dessert3:hover .padding {
+  /* animation: moveToLeft 0.5s ease reverse; */
+  width: 70%;
 }
 
 @keyframes moveToLeft {
   0% {
-    transform: translatex(20%);
+    transform: translatex(0);
   }
   100% {
     transform: translateX(100%);
@@ -231,7 +230,7 @@ h4 {
 .clearfix::after {
   content: checked-btn;
   clear: both;
-  display: table;
+  display: table; /* NO */
 }
 
 /*button Commander*/
@@ -261,4 +260,37 @@ h4 {
   background-image: lighter;
   opacity: 0.6;
   transition: opacity 300ms;
+}
+
+/*===========================================================================*/
+.padding {
+  padding: 15px;
+  width: 100%;
+  transition: width ease 0.5s;
+  outline: solid black 1px;
+}
+
+.checked-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  transition: left ease 0.5s;
+}
+
+.entree1:hover .checked-btn,
+.entree2:hover .checked-btn,
+.entree3:hover .checked-btn,
+.entree4:hover .checked-btn,
+.dish1:hover .checked-btn,
+.dish2:hover .checked-btn,
+.dish3:hover .checked-btn,
+.dessert1:hover .checked-btn,
+.dessert2:hover .checked-btn,
+.dessert3:hover .checked-btn {
+  left: 70%;
+}
+
+.txtprice {
+  outline: solid 1px black;
 }
