@@ -161,7 +161,6 @@ h4 {
 }
 
 .txtprice {
-  display: flex;
   justify-content: space-between;
   font-family: "Roboto";
   font-size: 0.8em;

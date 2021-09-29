@@ -286,18 +286,18 @@ img.inframe {
   cursor: pointer;
   margin: 0;
   transform: inherit;
-  transition: 1s linear;
 }
 
 .btn-heart:hover .heartempty {
   display: none;
   margin: 0;
+  transition: 0s 180s;
 }
 
-.btn-heart:hover .heartfill,
-.btn-heart::after {
+.btn-heart:hover .heartfill {
   display: block;
   margin: 0;
+  transition: 0s;
 }
 
 .new {
