@@ -35,7 +35,12 @@
     />
   </head>
   <body>
-    <div class="spinner"></div>
+    <div id="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <div id="bloc_page">
       <header>
         <a href=""><img src="ohmyfood.png" alt="ohmyfood" class="logo" /></a>
@@ -56,92 +61,82 @@
         <h2>
           Découvrez des restaurants d'exception,séléctionnés par nos soins
         </h2>
-        <a href="#list-resto"
-          ><button class="explore">Explorer nos restaurants</button></a
-        >
+        <button class="explore" onclick="window.location.href='#';">
+          Explorer nos restaurants
+        </button>
       </div>
       <nav class="navbar">
         <h3>Fonctionnement</h3>
         <div class="filter">
-          <a href="#list-resto" class="choices"
+          <a href="" class="choices"
             ><span class="number">1</span>
             <i class="fas fa-mobile-alt"></i>Choississez un restaurants
           </a>
-          <a href="#" class="choices"
+          <a href="" class="choices"
             ><span class="number">2</span><i class="fa fa-list-ul"></i>
             <span class="menupreview">Composez votre menu</span>
           </a>
-          <a href="#" class="choices"
+          <a href="" class="choices"
             ><span class="number">3</span> <i class="fa fa-store"></i>Dégustez
             au restaurant
           </a>
         </div>
       </nav>
       <div class="restaurants">
-        <h3 id="list-resto">Restaurants</h3>
-        <div class="one">
-          <a href="lapalettedugout.html"
-            ><img
-              src="img/img-lapalettedugoutsmall.jpg"
-              alt="restaurant la palette du gout"
-              class="inframe"
-          /></a>
-          <span class="new">Nouveau</span>
-          <div class="info">
-            <a href="lapalettedugout.html">La palette du goût</a>
-            <a href="lapalettedugout.html">Ménilmontant</a>
-            <div class="btn-heart">
-              <img src="img/heartempty.png" class="heartempty" />
-              <img src="img/heartcolor.png" class="heartfill" />
+        <div class="resto-choices">
+          <h3 id="list-resto">Restaurants</h3>
+          <div class="one">
+            <a href="lapalettedugout.html"
+              ><img
+                src="img/img-lapalettedugoutsmall.jpg"
+                alt="restaurant la palette du gout"
+                class="inframe"
+            /></a>
+            <span class="new">Nouveau</span>
+            <div class="info">
+              <a href="lapalettedugout.html">La palette du goût</a>
+              <a href="lapalettedugout.html">Ménilmontant</a>
+              <div class="btn-heart"></div>
             </div>
           </div>
-        </div>
-        <div class="two">
-          <a href="lanoteechantee.html"
-            ><img
-              src="img/img-Lanoteenchanteesmall.jpg"
-              alt="restaurant la note enchantee"
-              class="inframe"
-          /></a>
-          <span class="new">Nouveau</span>
-          <div class="info">
-            <a href="lanoteechantee.html">La note enchantee</a>
-            <a href="lanoteechantee.html">Charonne </a>
-            <div class="btn-heart">
-              <img src="img/heartempty.png" class="heartempty" />
-              <img src="img/heartcolor.png" class="heartfill" />
+          <div class="two">
+            <a href="lanoteechantee.html"
+              ><img
+                src="img/img-Lanoteenchanteesmall.jpg"
+                alt="restaurant la note enchantee"
+                class="inframe"
+            /></a>
+            <span class="new">Nouveau</span>
+            <div class="info">
+              <a href="lanoteechantee.html">La note enchantee</a>
+              <a href="lanoteechantee.html">Charonne </a>
+              <div class="btn-heart"></div>
             </div>
           </div>
-        </div>
-        <div class="three">
-          <a href="alafrancaise.html"
-            ><img
-              src="img/img-alafrancaisesmall.jpg"
-              alt="restaurant a la francaise"
-              class="inframe"
-          /></a>
-          <div class="info">
-            <a href="#">À la française</a>
-            <a href="alafrancaise.html">Cité Rouge </a>
-            <div class="btn-heart">
-              <img src="img/heartempty.png" class="heartempty" />
-              <img src="img/heartcolor.png" class="heartfill" />
+          <div class="three">
+            <a href="alafrancaise.html"
+              ><img
+                src="img/img-alafrancaisesmall.jpg"
+                alt="restaurant a la francaise"
+                class="inframe"
+            /></a>
+            <div class="info">
+              <a href="#">À la française</a>
+              <a href="alafrancaise.html">Cité Rouge </a>
+              <div class="btn-heart"></div>
             </div>
           </div>
-        </div>
-        <div class="four">
-          <a href="ledelicesdessens.html"
-            ><img
-              src="img/img-ledelicesdessenssmall.jpg"
-              alt="restaurant le delices des sens"
-              class="inframe"
-          /></a>
-          <div class="info">
-            <a href="ledelicesdessens.html">Le délice des sens</a>
-            <a href="ledelicesdessens.html">Folie-Mericourt</a>
-            <div class="btn-heart">
-              <img src="img/heartempty.png" class="heartempty" />
-              <img src="img/heartcolor.png" class="heartfill" />
+          <div class="four">
+            <a href="ledelicesdessens.html"
+              ><img
+                src="img/img-ledelicesdessenssmall.jpg"
+                alt="restaurant le delices des sens"
+                class="inframe"
+            /></a>
+            <div class="info">
+              <a href="ledelicesdessens.html">Le délice des sens</a>
+              <a href="ledelicesdessens.html">Folie-Mericourt</a>
+              <div class="btn-heart"></div>
             </div>
           </div>
         </div>
@@ -167,10 +162,10 @@
       <p><a href="mailto:contact@ohmyfood.co'" class="link"> Contact</a></p>
     </footer>
     <div class="menuspreview">
-      <img src="img/menu1.png" class="first" />
-      <img src="img/menu2.png" class="second" />
-      <img src="img/menu3.png" class="third" />
-      <img src="img/menu4.png" class="fourth" />
+      <img src="img/menu1.png" class="first" alt="cardmenu" />
+      <img src="img/menu2.png" class="second" alt="cardmenu" />
+      <img src="img/menu3.png" class="third" alt="cardmenu" />
+      <img src="img/menu4.png" class="fourth" alt="cardmenu" />
     </div>
   </body>
 </html>
