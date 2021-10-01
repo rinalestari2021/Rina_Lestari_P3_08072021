@@ -128,7 +128,7 @@ label input {
   color: white;
   background: none;
   padding: 15px 15px;
-  font-size: 1em;
+  font-size: 0.9em;
   cursor: pointer;
   border-radius: 25px 25px 25px 25px;
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
@@ -277,14 +277,19 @@ img.inframe {
   height: auto;
   cursor: pointer;
   margin: 0;
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
+  margin-left: -1em;
+  top: 0.5em;
   background-image: url("img/heartempty.png");
   background-size: cover;
+  transition: 0s 180s;
 }
 
 .btn-heart:hover {
   background-image: url("img/heartcolor.png");
+  cursor: pointer;
+  transition: 0;
 }
 
 .new {
@@ -396,7 +401,7 @@ a.link,
   background: white;
 }
 
-/*preview menus animation*/
+/*preview menus animation
 .menuspreview {
   display: none;
   position: absolute;
@@ -420,13 +425,36 @@ a.link,
 }
 
 @keyframes preview {
-  from {
-    margin-right: 100%;
-    width: 100%;
+  0% {
+    opacity: 1;
   }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
+
+#menuspreview img:nth-last-of-type(1) {
+  animation-delay: 6s;
+}
+
+#menuspreview img:nth-last-of-type(2) {
+  animation-delay: 4s;
+}
+
+#menuspreview img:nth-last-of-type(3) {
+  animation-delay: 2s;
+}
+
+#menuspreview img:nth-last-of-type(4) {
+  animation-delay: 0;
+}
+*/
