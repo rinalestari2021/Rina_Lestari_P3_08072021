@@ -5,7 +5,9 @@ img {
 }
 
 .fa-arrow-left {
-  margin-left: -8em;
+  position: absolute;
+  margin-left: -6em;
+  top: 0.5em;
   margin-bottom: 1.5em;
   text-align: center;
   text-decoration: none;
@@ -129,6 +131,7 @@ h4 {
   background-color: #f6f6f6;
   border: 2px solid rgb(235, 233, 233);
   border-radius: 15px 15px 15px 15px;
+  padding: 5px;
   text-decoration: none;
   line-height: 1.5em;
   margin: 2%;
@@ -162,9 +165,12 @@ h4 {
   justify-content: space-between;
   font-family: "Roboto";
   font-size: 0.8em;
+}
+
+.texts {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /* animation checked slide in from right need to fix the position*/
