@@ -90,9 +90,7 @@ h4 {
   border-bottom: 1px #99e2d0;
 }
 
-.startermenu,
-.dish,
-.dessertlist {
+.menu {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
@@ -145,7 +143,6 @@ h4 {
   font-weight: 700;
   font-size: 1em;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -167,12 +164,6 @@ h4 {
   font-size: 0.8em;
 }
 
-.texts {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 /* animation checked slide in from right need to fix the position*/
 .checked-btn {
   width: 2.5em;
@@ -184,10 +175,14 @@ h4 {
 }
 
 .checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   display: block;
-  animation: spin 1s linear;
-  -webkit-animation: spin 1s linear;
+  animation: spin 0.5s linear;
+  -webkit-animation: spin 0.5s linear, movetoleft 1s linear;
+  transition-duration: 0.5s;
 }
 
 @keyframes movetoleft {
@@ -196,20 +191,6 @@ h4 {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-.cards:hover .padding {
-  /* animation: moveToLeft 0.5s ease reverse; */
-  width: 70%;
-}
-
-@keyframes moveToLeft {
-  0% {
-    transform: translatex(0);
-  }
-  100% {
-    transform: translateX(100%);
   }
 }
 
@@ -243,11 +224,10 @@ h4 {
 }
 
 /*===========================================================================*/
-.padding {
+.texts {
   padding: 15px;
   width: 100%;
-  transition: width ease 0.5s;
-  outline: solid black 1px;
+  transition: width ease 1s;
 }
 
 .checked-btn {
@@ -255,7 +235,7 @@ h4 {
   top: 0;
   bottom: 0;
   left: 100%;
-  transition: left ease 0.5s;
+  transition: left ease 1s;
 }
 
 .cards:hover .checked-btn {

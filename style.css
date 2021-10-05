@@ -256,7 +256,7 @@ img.inframe {
   display: grid;
   grid-template-columns: 1fr 5%;
   grid-template-rows: 1fr 1fr;
-  margin: 2%;
+  margin: 4%;
 }
 
 .info :nth-child(1) {
@@ -277,7 +277,6 @@ img.inframe {
   align-self: center;
   height: auto;
   cursor: pointer;
-  margin: 0;
   width: 2em;
   height: 2em;
   top: 0.5em;
@@ -429,6 +428,11 @@ body.loading #spinner {
   width: 100%;
   height: auto;
   background: white;
+  transition:1s,ease-in-out;
+}
+
+.menupreview:hover .first{
+  opacity:1.0;
 }
 
 .first,
