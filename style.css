@@ -256,7 +256,7 @@ img.inframe {
   display: grid;
   grid-template-columns: 1fr 5%;
   grid-template-rows: 1fr 1fr;
-  margin: 4%;
+  margin: 2%;
 }
 
 .info :nth-child(1) {
@@ -270,42 +270,32 @@ img.inframe {
   grid-column: 1;
   grid-row: 2;
 }
+/*animation for button like in heart shape*/
+
+.heart {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .fa-heart {
   display: flex;
-  font-size: 35px;
   color: transparent;
   -webkit-text-stroke: 2px black;
-  opacity: 0.2;
+  opacity: 0.5;
+  margin-left: -0.5em;
 }
 
 .fa-heart:hover {
   background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 0px;
   opacity: 1;
   transition: all 2s ease-in-out;
-}
-
-/*animation for button like in heart shape*/
-.btn-heart {
-  display: block;
-  align-self: center;
-  height: auto;
+  transform-origin: bottom;
   cursor: pointer;
-  width: 2em;
-  height: 2em;
-  top: 0.5em;
-  margin: 0;
-  background-image: url("img/heartempty.png");
-  background-size: cover;
-  transition: 0s 180s;
-}
-
-.btn-heart:hover {
-  background-image: url("img/heartcolor.png");
-  cursor: pointer;
-  margin: 0;
 }
 
 .new {
@@ -368,12 +358,14 @@ a.link,
   justify-content: center;
   align-content: center;
   position: absolute;
-  left: 50%;
+  opacity: 0.97;
   top: 50%;
+  left: 50%;
+  background: white;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  z-index: 99;
+  z-index: 10;
   color: white;
   -webkit-transition: all 0.3s 1s ease-out;
   transition: 0.3s 1s ease-out;
