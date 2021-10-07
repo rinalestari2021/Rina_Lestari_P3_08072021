@@ -159,34 +159,39 @@ h4 {
   display: inline-block;
 }
 
-/* animation checked slide in from right need to fix the position*/
+/* animation checked slide in*/
 .checked-btn {
-  width: 20%;
-  position: relative;
-  border: 2px solid #99e2d0;
-  background-color: #99e2d0;
-  padding: 1em;
-  border-radius: 0 15px 15px 0;
-}
-
-.checkmark {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  display: block;
-  animation: spin 0.5s linear;
-  -webkit-animation: spin 0.5s linear, movetoleft 1s linear;
-  transition-duration: 0.5s;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  transition: left ease 1s;
+  width: 20%;
+  border: 2px solid #99e2d0;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+}
+.texts {
+  padding: 15px;
+  width: 100%;
+  transition: width ease 1s;
 }
 
-@keyframes movetoleft {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards:hover .checked-btn {
+  left: 70%;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 2.2em;
+}
+
+.cards:hover i {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 /*button Commander*/
@@ -216,30 +221,4 @@ h4 {
   background-image: lighter;
   opacity: 0.6;
   transition: opacity 300ms;
-}
-
-/*===========================================================================*/
-.texts {
-  padding: 15px;
-  width: 100%;
-  transition: width ease 1s;
-}
-
-.checked-btn {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 100%;
-  transition: left ease 1s;
-}
-
-.cards:hover .checked-btn {
-  left: 70%;
-}
-
-.fa-check-circle {
-  color: white;
-  font-size: 2.2em;
-  transform: rotate(360deg);
-  transition-duration: 0.5s;
 }

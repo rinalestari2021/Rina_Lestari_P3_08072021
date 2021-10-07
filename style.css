@@ -369,9 +369,9 @@ a.link,
   z-index: 10;
   color: white;
   animation-name: spinner;
-  animation-duration: 10s;
+  animation-duration: 3s;
   animation-timing-function: linear;
-  animation-delay: 10s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
