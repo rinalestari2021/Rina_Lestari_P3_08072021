@@ -369,9 +369,9 @@ a.link,
   z-index: 10;
   color: white;
   animation-name: spinner;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-timing-function: linear;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -423,66 +423,3 @@ body.loading #spinner {
 body.loading #spinner {
   display: block;
 }
-
-/*preview menus animation
-.menuspreview {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-  background: white;
-  transition:1s,ease-in-out;
-}
-
-.menupreview:hover .first{
-  opacity:1.0;
-}
-
-.first,
-.second,
-.third,
-.fourth {
-  animation-duration: 3s;
-  animation-delay: 0.5s;
-  animation-name: preview;
-  animation-iteration-count: inherit;
-}
-
-@keyframes preview {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#menuspreview img:nth-last-of-type(1) {
-  animation-delay: 6s;
-}
-
-#menuspreview img:nth-last-of-type(2) {
-  animation-delay: 4s;
-}
-
-#menuspreview img:nth-last-of-type(3) {
-  animation-delay: 2s;
-}
-
-#menuspreview img:nth-last-of-type(4) {
-  animation-delay: 0;
-}
-*/

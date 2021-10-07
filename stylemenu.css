@@ -108,6 +108,7 @@ h4 {
 }
 
 .cards {
+  width: 100%;
   display: block;
   position: relative;
   background-color: #f6f6f6;
@@ -144,6 +145,7 @@ h4 {
 }
 
 .txtprice {
+  display: flex;
   justify-content: space-between;
   font-family: "Roboto";
   font-size: 0.8em;
@@ -157,6 +159,12 @@ h4 {
 .block,
 .checked-btn {
   display: inline-block;
+}
+
+.block > .price {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* animation checked slide in*/
