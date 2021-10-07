@@ -11,6 +11,12 @@
     max-width: 100%;
   }
 
+  h4 {
+    border-bottom: 3px solid #99e2d0;
+    width: 2.5em;
+    height: 1.5em;
+  }
+
   .logo {
     width: 15em;
     margin-bottom: 1rem;
@@ -139,25 +145,6 @@
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .cards {
-    overflow: hidden;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    background-color: #f6f6f6;
-    border: 2px solid rgb(235, 233, 233);
-    padding: 15px 15px;
-    border-radius: 15px 15px 15px 15px;
-    text-decoration: none;
-    color: black;
-    line-height: 1.5em;
-    margin: 2%;
-    cursor: pointer;
-    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
   .texts {
     max-width: 100%;
     overflow: hidden;
@@ -173,16 +160,30 @@
     max-width: 100%;
   }
 
-  .btn-heart2 {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .cards {
     display: block;
-    align-self: center;
-    height: auto;
+    position: relative;
+    background-color: #f6f6f6;
+    border: 2px solid rgb(235, 233, 233);
+    border-radius: 15px 15px 15px 15px;
+    padding: 15px;
+    text-decoration: none;
+    line-height: 1.5em;
+    margin: 2%;
+    overflow: hidden;
     cursor: pointer;
-    margin: 0;
-    width: 1em;
-    height: 1em;
-    background-image: url("img/heartempty.png");
-    background-size: cover;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
   /*button heart stay on click*/
@@ -277,6 +278,39 @@
     margin-right: 1em;
     font-size: 1em;
     text-align: left;
+  }
+
+  .menu {
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(28% - 0.5em);
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+    vertical-align: top;
+    overflow: hidden;
+    margin-right: 1.5em;
+  }
+
+  .cards {
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-between;
+    flex-wrap: nowrap;
+    background-color: #f6f6f6;
+    border: 2px solid rgb(235, 233, 233);
+    padding: 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    text-decoration: none;
+    color: black;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+    cursor: pointer;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
   .resto-choices {
@@ -441,12 +475,26 @@
     margin-right: 2em;
   }
 
+  .menu {
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(28% - 0.5em);
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+    vertical-align: top;
+    overflow: hidden;
+    margin-right: 1.5em;
+  }
+
   .cards {
     overflow: hidden;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-between;
     flex-wrap: nowrap;
     background-color: #f6f6f6;
     border: 2px solid rgb(235, 233, 233);
@@ -455,7 +503,7 @@
     text-decoration: none;
     color: black;
     line-height: 1.5em;
-    margin: 2%;
+    margin-bottom: 2em;
     cursor: pointer;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   }
@@ -473,27 +521,6 @@
     margin-bottom: 1em;
     margin-right: 1em;
     max-width: 100%;
-  }
-
-  .btn-heart2 {
-    display: block;
-    align-self: center;
-    height: auto;
-    cursor: pointer;
-    margin: 0;
-    width: 1em;
-    height: 1em;
-    background-image: url("img/heartempty.png");
-    background-size: cover;
-  }
-
-  /*button heart stay on click*/
-  .btn-heart:hover .heartempty,
-  .btn-heart:active .heartfill,
-  .btn-heart:focus .heartfill,
-  .btn-heart:target .heartfill {
-    margin: 0;
-    background-color: none;
   }
 
   .containerfooter {
@@ -662,13 +689,18 @@
     justify-content: flex-start;
   }
 
-  .one,
-  .two,
-  .three,
-  .four {
-    flex: 1;
-    flex-direction: column;
-    margin-right: 2em;
+  .menu {
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(28% - 0.5em);
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+    vertical-align: top;
+    overflow: hidden;
+    margin-right: 1.5em;
   }
 
   .cards {
@@ -676,7 +708,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-between;
     flex-wrap: nowrap;
     background-color: #f6f6f6;
     border: 2px solid rgb(235, 233, 233);
@@ -685,7 +717,7 @@
     text-decoration: none;
     color: black;
     line-height: 1.5em;
-    margin: 2%;
+    margin-bottom: 2em;
     cursor: pointer;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   }
@@ -703,18 +735,6 @@
     margin-bottom: 1em;
     margin-right: 1em;
     max-width: 100%;
-  }
-
-  .btn-heart2 {
-    display: block;
-    align-self: center;
-    height: auto;
-    cursor: pointer;
-    margin: 0;
-    width: 1em;
-    height: 1em;
-    background-image: url("img/heartempty.png");
-    background-size: cover;
   }
 
   /*button heart stay on click*/
