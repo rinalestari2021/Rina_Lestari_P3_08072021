@@ -357,7 +357,8 @@ a.link,
   display: flex;
   justify-content: center;
   align-content: center;
-  position: absolute;
+  position: fixed;
+  inset: 0;
   opacity: 0.97;
   top: 50%;
   left: 50%;
@@ -367,8 +368,11 @@ a.link,
   transform: translateX(-50%) translateY(-50%);
   z-index: 10;
   color: white;
-  -webkit-transition: all 0.3s 1s ease-out;
-  transition: 0.3s 1s ease-out;
+  animation-name: spinner;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
 }
 
 #spinner div {
@@ -393,14 +397,22 @@ a.link,
 #spinner div:nth-child(3) {
   animation-delay: -0.15s;
 }
-@keyframes spinner {
-  0% {
+
+@keyframes rotate {
+  from {
     transform: rotate(0deg);
-    visibility: visible;
   }
-  100% {
+  to {
     transform: rotate(360deg);
-    visibility: hidden;
+  }
+}
+
+@keyframes spinner {
+  from {
+    z-index: 1;
+  }
+  to {
+    z-index: -1;
   }
 }
 
@@ -410,19 +422,6 @@ body.loading #spinner {
 
 body.loading #spinner {
   display: block;
-}
-
-/*overlay on page accueil*/
-.overlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-  background: white;
 }
 
 /*preview menus animation

@@ -42,22 +42,6 @@ img {
   background-image: url("img/heartcolor.png");
 }
 
-/* img.heartfill {
-  display: none;
-  margin: 0;
-}
-
-.btn-heart2:hover .heartempty {
-  display: none;
-  margin: 0;
-}
-
-.btn-heart2:hover .heartfill,
-.btn-heart2:visited {
-  display: block;
-  margin: 0;
-} */
-
 .resto {
   display: flex;
   justify-content: space-between;
@@ -166,9 +150,18 @@ h4 {
   width: 80%;
 }
 
+.block {
+  width: 100%;
+}
+
+.block,
+.checked-btn {
+  display: inline-block;
+}
+
 /* animation checked slide in from right need to fix the position*/
 .checked-btn {
-  width: 2.5em;
+  width: 20%;
   position: relative;
   border: 2px solid #99e2d0;
   background-color: #99e2d0;
