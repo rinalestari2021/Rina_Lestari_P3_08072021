@@ -161,6 +161,11 @@ h4 {
   transition-duration: 1s;
 }
 
+.cards > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 /*button Commander*/
 .btn-order {
   margin: auto;
