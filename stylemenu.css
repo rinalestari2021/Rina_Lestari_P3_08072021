@@ -113,6 +113,7 @@ h4 {
 
 .block {
   width: 100%;
+  overflow: hidden;
 }
 
 .block,
