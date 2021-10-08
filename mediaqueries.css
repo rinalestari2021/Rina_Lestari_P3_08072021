@@ -189,15 +189,6 @@
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  /*button heart stay on click*/
-  .btn-heart:hover .heartempty,
-  .btn-heart:active .heartfill,
-  .btn-heart:focus .heartfill,
-  .btn-heart:target .heartfill {
-    margin: 0;
-    background-color: none;
-  }
-
   .containerfooter {
     margin: 0;
   }
@@ -491,20 +482,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-
-  .containerfooter {
-    display: flex;
-    justify-content: start;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: center;
-    margin: 0;
-  }
-
-  .logofooter {
-    width: 10em;
-    margin-top: 0.3em;
-  }
 }
 
 /*large screen*/
@@ -674,20 +651,9 @@
     max-width: 100%;
   }
 
-  /*button heart stay on click*/
-  .btn-heart:hover .heartempty,
-  .btn-heart:active .heartfill,
-  .btn-heart:focus .heartfill,
-  .btn-heart:target .heartfill {
-    margin: 0;
-    background-color: none;
-  }
-
   .containerfooter {
     display: flex;
-    justify-content: start;
     justify-content: space-between;
-    align-content: flex-start;
     align-items: center;
     padding: 1.2em;
     margin: 0;
@@ -709,15 +675,5 @@
   .txtprice {
     display: flex;
     justify-content: space-between;
-    font-family: "Roboto";
-    font-size: 0.8em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .logofooter {
-    width: 10em;
-    margin-top: 0.3em;
   }
 }

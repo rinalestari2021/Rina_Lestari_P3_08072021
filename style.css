@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Shrikhand" "Roboto";
+  font-family: "Shrikhand";
   src: url("../Rina_Lestari_P3_08072021/fonts/Roboto.ttf"),
     url("../Rina_Lestari_P3_08072021/fonts/Shrikhand.ttf");
 }
@@ -136,10 +136,9 @@ label input {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.explore:hover, /*animation for button*/
-:active {
+/*animation for button*/
+.explore:hover {
   box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.5);
-  background-image: lighter;
   opacity: 0.6;
   transition: opacity 300ms;
 }
@@ -388,7 +387,7 @@ a.link,
   border-bottom-color: #99e2d0;
   border-radius: 50%;
   animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #9356dc#fff transparent transparent transparent;
+  border-color: #9356dc#fff #99e2d0;
 }
 
 #spinner div:nth-child(1) {
