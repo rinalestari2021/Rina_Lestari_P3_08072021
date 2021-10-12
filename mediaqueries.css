@@ -203,7 +203,7 @@
 
   .price {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
     font-family: "Roboto";
     font-weight: 600;
@@ -353,6 +353,18 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 2em;
     grid-row-gap: 1em;
+  }
+
+  .price {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 2%;
   }
 
   .containerfooter {
@@ -565,7 +577,7 @@
 
   .price {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
     font-family: "Roboto";
     font-weight: 600;
@@ -804,7 +816,7 @@
 
   .price {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
     font-family: "Roboto";
     font-weight: 600;
@@ -898,12 +910,8 @@
     font-weight: 700;
     font-size: 1em;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  .txtprice {
-    display: flex;
-    justify-content: space-between;
+    max-width: 100%;
+    text-overflow: ellipsis;
   }
 }

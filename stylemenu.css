@@ -96,7 +96,7 @@ h4 {
 
 .price {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   font-family: "Roboto";
   font-weight: 600;
