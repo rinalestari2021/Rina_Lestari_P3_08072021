@@ -95,13 +95,15 @@ h4 {
 }
 
 .price {
+  display: flex;
+  align-items: center;
   position: relative;
   font-family: "Roboto";
-
   font-weight: 600;
   font-size: 1em;
   white-space: nowrap;
   cursor: pointer;
+  margin-right: 2%;
 }
 
 .txtprice {
@@ -139,10 +141,12 @@ h4 {
   left: 100%;
   transition: left ease 1s;
   width: 0px;
-  border: 2px solid #99e2d0;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
+  overflow: hidden;
+  transition: ease-in-out 400ms;
 }
+
 .texts {
   padding: 15px;
   width: 100%;
