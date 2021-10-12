@@ -16,8 +16,13 @@ body {
 }
 
 header {
-  text-align: center;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  margin-right: 64px;
 }
 
 .h1,
@@ -370,7 +375,7 @@ a.link,
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   z-index: 10;
-  animation-name: rotate;
+  animation-name: spinner;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-delay: 1s;
@@ -422,7 +427,7 @@ a.link,
     z-index: 1;
   }
   to {
-    z-index: -1;
+    z-index: -1000;
     visibility: hidden;
   }
 }

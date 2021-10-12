@@ -6,7 +6,7 @@ img {
 
 .fa-arrow-left {
   position: absolute;
-  margin-left: -6em;
+  /* margin-left: -6em; */
   top: 0.5em;
   margin-bottom: 1.5em;
   text-align: center;
