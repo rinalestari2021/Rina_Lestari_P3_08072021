@@ -61,10 +61,32 @@ h4 {
   flex-direction: column;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 2%;
-  margin-right: 2%;
   justify-content: space-between;
   overflow: hidden;
+  animation-duration: 3s;
+  animation-name: slidein;
+  transition: ease-in;
+}
+
+.menu:nth-child(1) {
+  animation-delay: -0.5s;
+}
+.menu:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.menu:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    width: 300%;
+  }
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
 }
 
 .cards {

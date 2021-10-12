@@ -167,8 +167,6 @@
     justify-self: start;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 2%;
-    margin-right: 2%;
     justify-content: space-between;
     overflow: hidden;
     max-width: 100%;
@@ -781,8 +779,6 @@
     height: auto;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 2%;
-    margin-right: 2%;
     vertical-align: top;
     overflow: hidden;
     margin-right: 1.5em;
