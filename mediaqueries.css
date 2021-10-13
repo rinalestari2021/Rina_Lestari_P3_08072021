@@ -22,19 +22,6 @@
     margin-bottom: 1rem;
   }
 
-  .fa-arrow-left {
-    position: absolute;
-    /* margin-left: -6em; */
-    top: 0.5em;
-    margin-bottom: 1.5em;
-    text-align: center;
-    text-decoration: none;
-    color: #353535;
-    font-size: 1.2em;
-    font-weight: 600;
-    vertical-align: middle;
-  }
-
   .explore {
     width: 20em;
     align-items: center;
@@ -176,7 +163,6 @@
     display: flex;
     position: relative;
     background-color: #f6f6f6;
-    border: 2px solid rgb(235, 233, 233);
     border-radius: 15px 15px 15px 15px;
     padding: 15px 0px 15px 15px;
     text-decoration: none;
@@ -305,18 +291,6 @@
     max-width: 100%;
   }
 
-  .fa-arrow-left {
-    position: relative;
-    /* margin-left: -17em; */
-    margin-bottom: 1.5em;
-    text-align: center;
-    text-decoration: none;
-    color: #353535;
-    font-size: 1.2em;
-    font-weight: 600;
-    vertical-align: middle;
-  }
-
   .navbar {
     position: relative;
     display: flex;
@@ -390,19 +364,6 @@
   .logo {
     width: 15em;
     margin-bottom: 1rem;
-  }
-
-  .fa-arrow-left {
-    position: absolute;
-    margin-left: -20em;
-    top: 0.5em;
-    margin-bottom: 1.5em;
-    text-align: center;
-    text-decoration: none;
-    color: #353535;
-    font-size: 1.2em;
-    font-weight: 600;
-    vertical-align: middle;
   }
 
   .explore {
@@ -550,7 +511,6 @@
     display: flex;
     position: relative;
     background-color: #f6f6f6;
-    border: 2px solid rgb(235, 233, 233);
     border-radius: 15px 15px 15px 15px;
     padding: 15px 0px 15px 15px;
     text-decoration: none;
@@ -787,7 +747,6 @@
     display: flex;
     position: relative;
     background-color: #f6f6f6;
-    border: 2px solid rgb(235, 233, 233);
     border-radius: 15px 15px 15px 15px;
     padding: 15px 0px 15px 15px;
     text-decoration: none;

@@ -1,20 +1,52 @@
+header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+a.arrow {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-self: center;
+  text-align: left;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.arrow {
+  position: relative;
+  display: block;
+  align-self: left;
+  color: #353535;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
 img {
   max-width: 100%;
   height: auto;
   top: 1.2em;
 }
 
-.fa-arrow-left {
-  position: absolute;
-  /* margin-left: -6em; */
-  top: 0.5em;
-  margin-bottom: 1.5em;
-  text-align: center;
-  text-decoration: none;
-  color: #353535;
+.restoname {
+  display: flex;
+  justify-content: left;
+  font-family: "Shrikhand";
   font-size: 1.2em;
   font-weight: 600;
-  vertical-align: middle;
+  display: flex;
+  justify-items: flex-start;
+  align-content: space-between;
+  margin-left: 0.2%;
+  margin-right: 3%;
+}
+
+.top {
+  font-size: 32px;
 }
 
 .background {
@@ -25,6 +57,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .resto {
   display: flex;
   justify-content: space-between;
@@ -36,6 +69,14 @@ img {
   align-content: space-between;
   margin-left: 2%;
   margin-right: 3%;
+}
+
+.selections {
+  border-bottom: 3px solid #99e2d0;
+  width: 2.5em;
+  height: 1.5em;
+  margin: 2%;
+  font-weight: 600;
 }
 
 h4 {
@@ -63,13 +104,13 @@ h4 {
   margin-bottom: 1em;
   justify-content: space-between;
   overflow: hidden;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slidein;
   transition: ease-in;
 }
 
 .menu:nth-child(1) {
-  animation-delay: -0.5s;
+  animation-delay: -0.2s;
 }
 .menu:nth-child(2) {
   animation-delay: -0.3s;
@@ -93,7 +134,6 @@ h4 {
   display: flex;
   position: relative;
   background-color: #f6f6f6;
-  border: 2px solid rgb(235, 233, 233);
   border-radius: 15px 15px 15px 15px;
   padding: 15px 0px 15px 15px;
   text-decoration: none;

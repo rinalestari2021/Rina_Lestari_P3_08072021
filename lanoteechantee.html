@@ -34,7 +34,9 @@
   <body>
     <div id="bloc_page">
       <header>
-        <a href="accueil.html"><i class="fas fa-arrow-left"></i></a>
+        <a href="accueil.html" class="arrow"
+          ><i class="fas fa-arrow-left"></i
+        ></a>
         <a href="accueil.html"
           ><img src="ohmyfood.png" alt="ohmyfood" class="logo"
         /></a>
@@ -48,13 +50,13 @@
       </div>
       <div class="content">
         <div class="resto">
-          La note enchantée
+          <h1 class="restoname">La note enchantée</h1>
           <span class="heart">
-            <i class="fas fa-heart" style="font-size: 30px"></i>
+            <i class="fas fa-heart top"></i>
           </span>
         </div>
         <section class="menu">
-          <h4>ENTRÉES</h4>
+          <h2 class="selections">ENTRÉES</h2>
           <br />
           <div class="cards">
             <div class="block">
@@ -95,8 +97,8 @@
             </span>
           </div>
         </section>
-        <div class="menu">
-          <h4>PLATS</h4>
+        <section class="menu">
+          <h2 class="selections">PLATS</h2>
           <br />
           <div class="cards">
             <div class="block">
@@ -128,9 +130,9 @@
               ><i class="fas fa-check-circle"></i>
             </span>
           </div>
-        </div>
-        <div class="menu">
-          <h4>DESSERTS</h4>
+        </section>
+        <section class="menu">
+          <h2 class="selections">DESSERTS</h2>
           <br />
           <div class="cards">
             <div class="block">
@@ -160,7 +162,7 @@
               ><i class="fas fa-check-circle"></i>
             </span>
           </div>
-        </div>
+        </section>
       </div>
     </div>
     <button class="btn-order">Commander</button>
