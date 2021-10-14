@@ -6,15 +6,13 @@ header {
 }
 
 a.arrow {
+  position: sticky;
   display: flex;
-  position: relative;
-  justify-content: left;
-  align-self: center;
-  text-align: left;
+  align-self: flex-start;
+  align-items: flex-start;
   left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+  right: 95%;
+  top: 1em;
 }
 
 .arrow {

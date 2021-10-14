@@ -21,6 +21,13 @@ header {
   align-items: center;
 }
 
+.mark {
+  font-size: 1em;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
 .arrow {
   margin-right: 64px;
 }
@@ -376,9 +383,9 @@ a.link,
   transform: translateX(-50%) translateY(-50%);
   z-index: 10;
   animation-name: spinner;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: linear;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -393,10 +400,10 @@ a.link,
   z-index: 1;
   background: aquamarine;
   border: solid 25px #9356dc;
-  border-bottom-color: #99e2d0;
+  border-bottom-color: #678b82;
   border-radius: 50%;
-  animation: rotate 1s linear;
-  -webkit-animation: rotate 1s linear;
+  animation: rotate 1.5s linear;
+  -webkit-animation: rotate 1.5s linear;
   border-color: #9356dc#fff #99e2d0;
 }
 

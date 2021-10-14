@@ -5,6 +5,16 @@
     margin: 0;
   }
 
+  a.arrow {
+    position: sticky;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    left: 0;
+    right: 78%;
+    top: 1em;
+  }
+
   body {
     margin: auto;
     font-family: "Roboto";
