@@ -10,7 +10,6 @@ a.arrow {
   display: flex;
   align-self: flex-start;
   align-items: flex-start;
-  left: 0;
   right: 95%;
   top: 1em;
 }
@@ -18,7 +17,6 @@ a.arrow {
 .arrow {
   position: relative;
   display: block;
-  align-self: left;
   color: #353535;
   font-size: 1.2em;
   font-weight: 600;

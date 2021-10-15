@@ -623,7 +623,6 @@
   }
 }
 
-/*large screen*/
 @media screen and(min-width:1200px) {
   #bloc_page {
     max-width: 100%;
@@ -832,6 +831,16 @@
     transition: ease-in-out 400ms;
   }
 
+  .txtbold {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    text-overflow: ellipsis;
+  }
+
   .texts {
     padding: 15px;
     width: 100%;
@@ -868,15 +877,5 @@
 
   .p {
     font-size: 1.1em;
-  }
-
-  .txtbold {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 1em;
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 100%;
-    text-overflow: ellipsis;
   }
 }
