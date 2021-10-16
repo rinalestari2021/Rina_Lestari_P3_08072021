@@ -11,7 +11,7 @@
     align-self: flex-start;
     align-items: flex-start;
     left: 0;
-    right: 73%;
+    right: 85%;
     top: 1em;
   }
 
@@ -305,6 +305,16 @@
     max-width: 100%;
   }
 
+  a.arrow {
+    position: sticky;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    left: 0;
+    right: 85%;
+    top: 1em;
+  }
+
   .navbar {
     position: relative;
     display: flex;
@@ -378,6 +388,16 @@
   .logo {
     width: 12em;
     margin-bottom: 1rem;
+  }
+
+  a.arrow {
+    position: sticky;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    left: 0;
+    right: 73%;
+    top: 1em;
   }
 
   .restoname {

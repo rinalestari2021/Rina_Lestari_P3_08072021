@@ -95,12 +95,14 @@ b {
 /*style from top of page accueil*/
 
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 10em;
   height: auto;
-  align-items: center;
-  top: 0.4em;
-  margin-top: 0;
+  top: 0.7em;
+  text-align: center;
   margin-bottom: 0.8rem;
 }
 
