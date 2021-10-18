@@ -57,6 +57,32 @@ h2 {
   cursor: default;
 }
 
+.identite {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.identite .identitetext {
+  visibility: hidden;
+  width: 30em;
+  font-size: 0.9em;
+  background-color: #9356dc;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 14%;
+  margin-left: -60px;
+}
+
+.identite:hover .identitetext {
+  visibility: visible;
+}
+
 h3 {
   font-size: 1.3em;
   color: black;
