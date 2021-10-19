@@ -197,18 +197,18 @@ h4 {
   bottom: 0;
   margin: -15px 0px;
   left: 100%;
-  transition: left ease 1s;
+  transition: left ease 250ms;
   width: 0px;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
   overflow: hidden;
-  transition: ease-in-out 400ms;
+  transition: ease-in-out 250ms;
 }
 
 .texts {
   padding: 15px;
   width: 100%;
-  transition: width ease 1s;
+  transition: width ease 250ms;
 }
 
 .cards:hover .checked-btn {
@@ -222,7 +222,7 @@ h4 {
 
 .cards:hover i {
   transform: rotate(360deg);
-  transition-duration: 1s;
+  transition-duration: 250ms;
 }
 
 .cards:hover .checked-btn {
